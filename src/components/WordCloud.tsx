@@ -1,35 +1,27 @@
 export default function WordCloud() {
   return (
-    <section className="mx-auto max-w-5xl px-6 py-12 md:py-16">
-      <article className="flex flex-col items-center gap-8 md:flex-row md:items-start md:gap-16">
+    <section className="mx-auto max-w-4xl px-6 py-8">
+      <figure className="flex flex-col items-center">
+        {/* L'image est centrée, prend toute la largeur disponible (sans être écrasée) */}
+        <img 
+          src="/2.jpg" 
+          alt="Nuage de mots" 
+          className="h-auto w-full object-contain" 
+        />
         
-        {/* L'image sur le côté : on a augmenté la largeur md:w-96 (au lieu de 64) */}
-        <div className="w-full shrink-0 md:w-96">
-          <img 
-            src="/2.jpg" 
-            alt="Nuage de mots" 
-            className="h-auto w-full object-contain" 
-          />
-        </div>
-        
-        {/* Le texte à droite */}
-        <div className="flex-1 pt-4 text-[17px] font-light leading-relaxed text-neutral-800">
-          <p>
-            <strong className="font-semibold">Illustration :</strong>
-            <br />
-            Nuage de mots généré avec{' '}
-            <a
-              href="https://www.nuagesdemots.fr/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 underline hover:text-blue-800"
-            >
-              nuagesdemots.fr
-            </a>
-          </p>
-        </div>
-        
-      </article>
+        {/* Le texte est centré en dessous */}
+        <figcaption className="mt-6 text-center text-[17px] font-light leading-relaxed text-neutral-800">
+          Nuage de mots généré avec{' '}
+          <a
+            href="https://www.nuagesdemots.fr/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline hover:text-blue-800"
+          >
+            nuagesdemots.fr
+          </a>
+        </figcaption>
+      </figure>
     </section>
   );
 }
