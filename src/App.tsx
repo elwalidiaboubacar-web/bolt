@@ -8,13 +8,11 @@ function App() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <main className="pt-8 md:pt-12">
+      <main className="mx-auto max-w-7xl space-y-12 pb-24 pt-12">
         <Introduction />
         <WordCloud />
         <Bibliography />
-        <div className="mt-16 md:mt-24">
-          <Conclusion />
-        </div>
+        <Conclusion />
       </main>
     </div>
   );
