@@ -8,11 +8,17 @@ function App() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <main className="mx-auto max-w-7xl space-y-12 pb-24 pt-12">
+      <main className="pt-8 md:pt-12">
         <Introduction />
+        {/* Le WordCloud suit directement sans gros espacement */}
         <WordCloud />
-        <Bibliography />
-        <Conclusion />
+        {/* On réduit l'espace au dessus de la bibliographie */}
+        <div className="mt-8 md:mt-12">
+          <Bibliography />
+        </div>
+        <div className="mt-12 md:mt-20">
+          <Conclusion />
+        </div>
       </main>
     </div>
   );
