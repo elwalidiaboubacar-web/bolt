@@ -9,35 +9,37 @@ interface ReferenceCardProps {
   reference: ReferenceData;
   imageSrc: string;
   imageLabel: string;
+  imageAspect?: string;
 }
 
-export default function ReferenceCard({ reference, imageSrc, imageLabel }: ReferenceCardProps) {
+export default function ReferenceCard({ reference, imageSrc, imageLabel, imageAspect = "aspect-[3/4]" }: ReferenceCardProps) {
   return (
-    <article className="flex flex-col gap-6 rounded-lg border border-neutral-200 bg-white p-6 transition-shadow duration-300 hover:shadow-lg md:flex-row md:gap-8 md:p-8">
-      <div className="flex-shrink-0 flex justify-center md:justify-start">
-          <img 
-            src={imageSrc} 
-            alt={imageLabel} 
-            className="w-full max-w-[250px] object-contain rounded-md shadow-sm" 
-          />
+    <article className="flex flex-col gap-8 md:flex-row md:items-start">
+      <div className={`w-full shrink-0 md:w-64 ${imageAspect}`}>
+        <img 
+          src={imageSrc} 
+          alt={imageLabel} 
+          className="h-full w-full object-contain object-left-top" 
+        />
       </div>
-      <div className="min-w-0 flex-1 space-y-4 text-base leading-normal text-neutral-700">
+      
+      <div className="flex-1 space-y-4 text-base font-light leading-relaxed text-neutral-800">
         <p>
-          {reference.citation} Disponible sur :{' '}
+          {reference.citation}{' '}
           <a
             href={reference.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="break-all text-accent underline-offset-2 hover:text-accent-dark hover:underline"
+            className="text-blue-600 underline hover:text-blue-800"
           >
-            {reference.url}
+            Disponible sur : {reference.url}
           </a>
         </p>
         <p>
-          <strong className="font-semibold text-neutral-900">Requête :</strong> {reference.request}
+          <strong className="font-semibold">Requête :</strong> {reference.request}
         </p>
         <p>
-          <strong className="font-semibold text-neutral-900">Motif du choix :</strong> {reference.reason}
+          <strong className="font-semibold">Motif du choix :</strong> {reference.reason}
         </p>
       </div>
     </article>
