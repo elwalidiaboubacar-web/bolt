@@ -3,7 +3,8 @@ export default function Introduction() {
     <section className="mx-auto max-w-3xl px-6 py-16 md:py-24">
       {/* INSERER LE TEXTE D'INTRODUCTION ICI (Thématique, axe et stratégie de recherche) */}
       <p className="text-lg leading-normal text-neutral-700">
-      Je suis depuis longtemps intéressée par le domaine de la médecine, mais aussi par les sciences et les nouvelles technologies. J'aimerais donc exercer un métier qui associe les connaissances médicales et l'utilisation de technologies avancées. C'est pour cette raison que j'ai choisi de m'intéresser au métier de radiologue, une profession que j'aimerais exercer plus tard. Je trouve particulièrement intéressant le fait de pouvoir utiliser des appareils comme les scanners et les IRM pour aider à détecter des maladies et à poser des diagnostics.
+      Je suis depuis longtemps intéressée par le domaine de la médecine, mais aussi par les sciences et les nouvelles technologies.
+        J'aimerais donc exercer un métier qui associe les connaissances médicales et l'utilisation de technologies avancées. C'est pour cette raison que j'ai choisi de m'intéresser au métier de radiologue, une profession que j'aimerais exercer plus tard. Je trouve particulièrement intéressant le fait de pouvoir utiliser des appareils comme les scanners et les IRM pour aider à détecter des maladies et à poser des diagnostics.
 
 Mes recherches se sont donc portées sur la découverte et la compréhension de ce métier. J'ai voulu en savoir davantage sur les missions du radiologue, son quotidien, les études nécessaires pour exercer cette profession ainsi que les différentes possibilités d'évolution. Je me suis également intéressée aux changements que connaît actuellement le domaine de la radiologie, notamment avec le développement de l'iA
 
