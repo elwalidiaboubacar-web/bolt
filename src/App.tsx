@@ -10,12 +10,16 @@ function App() {
       <Header />
       <main className="pt-8 md:pt-12">
         <Introduction />
-        {/* Le WordCloud suit directement sans gros espacement */}
-        <WordCloud />
-        {/* On réduit l'espace au dessus de la bibliographie */}
+        
+        {/* On remet le nuage de mots ici */}
         <div className="mt-8 md:mt-12">
+          <WordCloud />
+        </div>
+        
+        <div className="mt-12 md:mt-16">
           <Bibliography />
         </div>
+        
         <div className="mt-12 md:mt-20">
           <Conclusion />
         </div>
