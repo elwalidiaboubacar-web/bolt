@@ -1,5 +1,3 @@
-import ImagePlaceholder from '@/components/ImagePlaceholder';
-
 export interface ReferenceData {
   citation: string;
   url: string;
@@ -7,26 +5,23 @@ export interface ReferenceData {
   reason: string;
 }
 
-type ImageAspect = 'portrait' | 'square' | 'landscape';
-
-const IMAGE_CLASSES: Record<ImageAspect, string> = {
-  portrait: 'aspect-[3/4] w-56 sm:w-64',
-  square: 'aspect-square w-full max-w-sm',
-  landscape: 'aspect-video w-full max-w-2xl',
-};
-
 interface ReferenceCardProps {
   reference: ReferenceData;
-  imageAspect: ImageAspect;
+  imageSrc: string;
   imageLabel: string;
 }
 
-export default function ReferenceCard({ reference, imageAspect, imageLabel }: ReferenceCardProps) {
+export default function ReferenceCard({ reference, imageSrc, imageLabel }: ReferenceCardProps) {
   return (
-    <article className="flex flex-col items-center gap-8">
-      {/* INSERER L'IMAGE ICI : remplacer ce bloc gris par une balise <img> de même classe de taille */}
-      <ImagePlaceholder label={imageLabel} className={`shrink-0 ${IMAGE_CLASSES[imageAspect]}`} />
-      <div className="w-full max-w-2xl space-y-4 text-base leading-normal text-neutral-700">
+    <article className="flex flex-col gap-6 rounded-lg border border-neutral-200 bg-white p-6 transition-shadow duration-300 hover:shadow-lg md:flex-row md:gap-8 md:p-8">
+      <div className="flex-shrink-0 flex justify-center md:justify-start">
+          <img 
+            src={imageSrc} 
+            alt={imageLabel} 
+            className="w-full max-w-[250px] object-contain rounded-md shadow-sm" 
+          />
+      </div>
+      <div className="min-w-0 flex-1 space-y-4 text-base leading-normal text-neutral-700">
         <p>
           {reference.citation} Disponible sur :{' '}
           <a
