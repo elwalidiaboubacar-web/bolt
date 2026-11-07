@@ -1,37 +1,43 @@
 import ReferenceCard, { type ReferenceData } from '@/components/ReferenceCard';
+import SectionTitle from '@/components/SectionTitle';
 
 const BOOK: ReferenceData = {
-  citation: 'GARCIA, Dominique (sous la direction de), La Fabrique de la France, 20 ans d\'archéologie préventive [en ligne]. Paris : Flammarion, 2021, 323 p.',
-  url: 'https://shs-cairn-info.ressources.univ-poitiers.fr/la-fabrique-de-la-france--9782080234704?lang=fr',
-  request: "Pour commencer mes recherches, je suis allé sur le site du SCD. J'ai choisi de garder cette référence car si l'intégralité du livre n'est pas disponible en ligne, de nombreuses pages de chaque chapitre le sont.",
-  reason: "J'ai choisi ce livre car en tapant la requête 'archéologue', je pensais trouver des ouvrages sur des pays très lointains. Je me suis rendu compte que l'archéologie est une discipline qui intervient non seulement pour explorer le passé mais pour construire l'avenir, dans la vie de tous les jours, partout en France. Cela me semble loin du cliché 'Indiana Jones' et me semble très pertinent vis-à-vis de mon sujet. En effet, il présente le métier d'archéologue dans toutes ses dimensions et en montre l'extraordinaire variété et utilité.",
+  citation: 'WEIR, Jamie et MURRAY, Alison D. Atlas d\'anatomie clinique : radiologie et imagerie médicale. Traduction de la 1ère édition anglaise par Antoine Dhem. Bruxelles : De Boeck Université, 2000, 248 p.',
+  url: 'https://share.google/j4gURZy9Bbw2s854j',
+  linkText: 'ODéBU+ - Anatomie et imagerie médicale',
+  request: "Pour effectuer ma recherche de référence imprimée, je me suis rendue sur le catalogue Odébu du Service Commun de la Documentation (SCD) de l'Université de Poitiers. J'ai saisi la requête avec les mots-clés : \"Anatomie et imagerie médicale\".",
+  reason: "J'ai choisi cet ouvrage rédigé par des radiologues praticiens car la connaissance approfondie de l'anatomie est le fondement incontournable du métier de radiologue. Cet atlas permet de faire le lien direct entre les structures anatomiques et leur représentation en imagerie médicale (radiographie, scanner, IRM), ce qui est indispensable pour l'apprentissage du diagnostic.",
 };
 
 const ARTICLE: ReferenceData = {
-  citation: 'LEHÖERFF Anne. Que faire des restes humains. L\'Histoire [en ligne], 2023/10 N° 512, pp.12-18.',
-  url: 'https://shs-cairn-info.ressources.univ-poitiers.fr/magazine-hist-histoire-2023-10-page-12?lang=fr',
-  request: "Je suis allé sur le site du SCD et j'ai choisi de consulter le bouquet de ressource généralistes CAIRN. J'ai cherché 'problématique archéologique' dans les revues récentes et je suis allé naturellement sur L'Histoire que je lis régulièrement. J'ai sélectionné les 5 dernières années comme date de publication.",
-  reason: "Le numéro en question est disponible intégralement en ligne et reflète une problématique très actuelle : les musées doivent-ils garder ce qu'ils ont recueilli dans d'autres pays, en particulier quand il s'agit de restes humains ? L'auteure est professeure d'université, membre de l'IUF et a beaucoup publié sur le sujet. J'ai donc pensé qu'il s'agit d'une source fiable.",
+  citation: "TRUPIA, Dilara Vanessa, GAGLIO, Gérald et MATHIEU-FRITZ, Alexandre. Comment l'IA s'invite-t-elle dans l'imagerie médicale ? Une approche comparative entre radiologie et dermatologie. Revue française des affaires sociales [en ligne], 2026, vol. Janvier-Mars, n° 1, pp. 151-172.",
+  url: 'https://share.google/7xR8iyMB8R7IyI0cv',
+  linkText: 'Comment l’IA s’invite-t-elle dans l’imagerie médicale ? Une approche comparative entre radiologie et dermatologie - ODéBU+ - Université de Poitiers',
+  request: "Pour trouver cet article de recherche, je me suis servie du catalogue de la BU (Odébu) en utilisant les mots-clés : intelligence artificielle, radiologie, imagerie médicale et en filtrant les résultats pour n'afficher que les articles de revue évalués.",
+  reason: "J'ai choisi cet article car il analyse précisément comment l'intelligence artificielle modifie la pratique quotidienne des radiologues. C'est une source scientifique et très récente qui m'apporte des éléments professionnels précis sur l'avenir de mon futur métier.",
 };
 
 const WEB_SOURCES: ReferenceData[] = [
   {
-    citation: 'Ministère chargé de l\'enseignement supérieur et de la recherche. Les personnels de la recherche [en ligne].',
-    url: 'https://www.enseignementsup-recherche.gouv.fr/fr/les-personnels-de-la-recherche-46556',
-    request: "Pour trouver cette page web j'ai effectué dans le moteur de recherche 'DuckDuckGo' les requêtes 'devenir chercheur', 'devenir archéologue', 'études archéologie'… puis dans le moteur 'Ecosia' pour voir la différence dans les résultats.",
-    reason: "Un archéologue est chercheur ou enseignant chercheur, donc employé par le ministère de l'enseignement supérieur et de la recherche. Ce site m'a permis de trouver une information fiable et officielle sur le métier d'enseignant chercheur ou de chercheur en archéologie. On y trouve la fiche de poste d'un enseignant chercheur ou d'un chercheur, les études à effectuer, le salaire et d'autres renseignements. J'ai aussi trouvé d'autres métiers (ingénieur de recherche, chargé d'études) qui sont susceptibles de m'intéresser.",
+    citation: "ANNONCES MÉDICALES. Radiologue - Annonces en radiologie : offres d'emploi et de remplacement [en ligne].",
+    url: 'https://www.annonces-medicales.com',
+    linkText: 'https://www.annonces-medicales.com',
+    request: "Pour trouver des informations concrètes sur l'insertion professionnelle et le marché de l'emploi du secteur, j'ai effectué une recherche sur un moteur de recherche avec les mots-clés : \"offres d'emploi\" radiologue remplacement installation.",
+    reason: "J'ai choisi cette plateforme car elle permet d'analyser directement les besoins du marché du travail pour les radiologues (CDI, CDD, remplacements ou cessions d'installation). Cela apporte une vision réaliste et pratique des perspectives d'embauche après le cursus de spécialisation.",
   },
   {
-    citation: 'Ipso Facto, Archéologie [en ligne].',
-    url: 'https://ipsofacto.coop/archeologie/',
-    request: "Je me suis servi du Guide des ressources d'Emploi qui figure dans les ressources documentaires et j'ai cherché 'archéologue', car je voulais voir si des entreprises offraient ce type de poste.",
-    reason: "Ce site est celui d'un bureau d'études, 1er opérateur agréé d’archéologie préventive subaquatique et sous-marine. Comme je suis passionné de plongée, cela m'a ouvert beaucoup de perspectives tant sur les études que les postes possibles.",
+    citation: "L'ÉTUDIANT. Devenir Radiologue : métier, études, salaire [en ligne].",
+    url: 'https://www.letudiant.fr/metiers/radiologue.html',
+    linkText: 'https://www.letudiant.fr/metiers/radiologue.html',
+    request: "Pour documenter l'aspect orientation et formation, j'ai utilisé le moteur de recherche Google avec la requête : \"Devenir Radiologue\" site:letudiant.fr.",
+    reason: "J'ai choisi cette source car c'est un portail d'orientation de référence pour les étudiants. Elle détaille clairement le parcours de formation (le passage par les études de santé, le concours de l'internat et la spécialisation), ainsi que la réalité du salaire et les conditions d'exercice du métier, ce qui répond directement à mes interrogations de poursuite d'études.",
   },
   {
-    citation: 'Arcade. Les chantiers d\'Arcade [en ligne].',
-    url: 'https://patrimoine-arcade.fr/chantiers/',
-    request: "Je me suis servi du Guide des ressources d'Emploi qui figure dans les ressources documentaires et j'ai cherché des entreprises ou des structures permettant de chercher du travail.",
-    reason: "Arcade est une association qui propose à des jeunes (18-30 ans) des chantiers bénévoles dans toute la France sur tout le patrimoine historique. Je pense aller regarder si je pourrai participer à un chantier de manière à en avoir une vision réaliste et commencer à me tisser un réseau.",
+    citation: "SOCIÉTÉ FRANÇAISE DE RADIOLOGIE (SFR). Dépistage organisé du cancer du sein : les propositions de la SIFEM pour faire évoluer le dispositif [en ligne].",
+    url: 'https://www.radiologie.fr',
+    linkText: 'https://www.radiologie.fr',
+    request: "Pour trouver une source qui évoque directement des instances professionnelles du secteur, j'ai effectué une recherche sur un moteur de recherche avec les mots-clés : \"Société Française de Radiologie\" actualités métier.",
+    reason: "J'ai choisi le site de la SFR car il s'agit de l'organisme de référence pour les radiologues en France. Cette source me permet de me tenir informée des actualités de la profession, des recommandations de santé publique (comme le dépistage) et des enjeux scientifiques actuels gérés par les praticiens du secteur.",
   },
 ];
 
@@ -39,9 +45,8 @@ export default function Bibliography() {
   return (
     <section className="mx-auto max-w-5xl space-y-16 px-6 py-12 md:space-y-24">
       
-      {/* SECTION LIVRE */}
       <div>
-        <h2 className="mb-8 text-center text-3xl font-light text-blue-700">Livre</h2>
+        <SectionTitle>Livre</SectionTitle>
         <ReferenceCard 
           reference={BOOK} 
           imageSrc="/3.jpg" 
@@ -50,9 +55,8 @@ export default function Bibliography() {
         />
       </div>
 
-      {/* SECTION ARTICLE */}
       <div>
-        <h2 className="mb-8 text-center text-3xl font-light text-blue-700">Article de revue en ligne</h2>
+        <SectionTitle>Article de revue en ligne</SectionTitle>
         <ReferenceCard 
           reference={ARTICLE} 
           imageSrc="/4.jpg" 
@@ -61,11 +65,12 @@ export default function Bibliography() {
         />
       </div>
 
-      {/* SECTION SOURCES WEB */}
       <div>
-        <h2 className="mb-8 text-center text-3xl font-light text-blue-700">Sources web</h2>
+        <SectionTitle>Sources web</SectionTitle>
         <div className="space-y-16 md:space-y-20">
           {WEB_SOURCES.map((source, index) => {
+             // Utilisation des images 5, 6 et 7. 
+             // Ajuste les extensions (.png ou .jpg) selon les fichiers exacts que tu as dans public/
              const ext = index === 1 ? 'jpg' : 'png';
              return (
                <ReferenceCard
