@@ -1,5 +1,4 @@
 import ReferenceCard, { type ReferenceData } from '@/components/ReferenceCard';
-import SectionTitle from '@/components/SectionTitle';
 
 const BOOK: ReferenceData = {
   citation: 'GARCIA, Dominique (sous la direction de), La Fabrique de la France, 20 ans d\'archéologie préventive [en ligne]. Paris : Flammarion, 2021, 323 p.',
@@ -38,20 +37,34 @@ const WEB_SOURCES: ReferenceData[] = [
 
 export default function Bibliography() {
   return (
-    <section className="mx-auto max-w-4xl space-y-16 px-6 md:space-y-24">
+    <section className="mx-auto max-w-5xl space-y-16 px-6 py-12 md:space-y-24">
+      
+      {/* SECTION LIVRE */}
       <div>
-        <SectionTitle>Livre</SectionTitle>
-        <ReferenceCard reference={BOOK} imageSrc="/3.jpg" imageLabel="Couverture du livre" />
+        <h2 className="mb-8 text-center text-3xl font-light text-blue-700">Livre</h2>
+        <ReferenceCard 
+          reference={BOOK} 
+          imageSrc="/3.jpg" 
+          imageLabel="Couverture du livre" 
+          imageAspect="aspect-[3/4]"
+        />
       </div>
 
+      {/* SECTION ARTICLE */}
       <div>
-        <SectionTitle>Article de revue en ligne</SectionTitle>
-        <ReferenceCard reference={ARTICLE} imageSrc="/4.jpg" imageLabel="Visuel de la revue" />
+        <h2 className="mb-8 text-center text-3xl font-light text-blue-700">Article de revue en ligne</h2>
+        <ReferenceCard 
+          reference={ARTICLE} 
+          imageSrc="/4.jpg" 
+          imageLabel="Visuel de la revue" 
+          imageAspect="aspect-[4/5]"
+        />
       </div>
 
+      {/* SECTION SOURCES WEB */}
       <div>
-        <SectionTitle>Sources web</SectionTitle>
-        <div className="space-y-16 md:space-y-24">
+        <h2 className="mb-8 text-center text-3xl font-light text-blue-700">Sources web</h2>
+        <div className="space-y-16 md:space-y-20">
           {WEB_SOURCES.map((source, index) => {
              const ext = index === 1 ? 'jpg' : 'png';
              return (
@@ -60,11 +73,13 @@ export default function Bibliography() {
                  reference={source}
                  imageSrc={`/${index + 5}.${ext}`}
                  imageLabel={`Capture de la source web ${index + 1}`}
+                 imageAspect="aspect-video"
                />
              )
           })}
         </div>
       </div>
+      
     </section>
   );
 }
