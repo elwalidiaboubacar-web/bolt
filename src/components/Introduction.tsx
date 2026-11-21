@@ -12,7 +12,7 @@ Je me suis également intéressée aux changements que connaît actuellement le 
         </p>
         
         <p>
-          Au cours de mes recherches, plusieurs questions se sont posées. En quoi consiste réellement le travail d'un radiologue ? Quelle place les nouvelles technologies occupent-elles dans son quotidien ? L'intelligence artificielle peut-elle faciliter le travail des radiologues ou représenter une menace pour cette profession ? Je me suis également demandé si ces évolutions allaient créer de nouvelles possibilités d'emploi ou modifier les besoins dans ce secteur.
+          Au cours de mes recherches, plusieurs questions se sont posées. En quoi consiste réellement le travail d'un radiologue ? Quelle place les nouvelles technologies occupent-elles dans son quotidien ? L'intelligence artificielle peut-elle faciliter le travail des radiologues ou représenter une menace pour cette profession ? 
         </p>
         
         <p>
