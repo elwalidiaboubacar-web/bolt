@@ -7,26 +7,38 @@ export interface ReferenceData {
 }
 
 interface ReferenceCardProps {
+  title?: string;
   reference: ReferenceData;
   imageSrc: string;
   imageLabel: string;
   imageAspect?: string;
 }
 
-export default function ReferenceCard({ reference, imageSrc, imageLabel, imageAspect = "aspect-[3/4]" }: ReferenceCardProps) {
+export default function ReferenceCard({
+  title,
+  reference,
+  imageSrc,
+  imageLabel,
+  imageAspect = "aspect-[3/4]",
+}: ReferenceCardProps) {
   return (
     <article className="flex flex-col gap-8 md:flex-row md:items-start">
       {/* L'image sur le côté (largeur fixe sur grand écran) */}
       <div className={`w-full shrink-0 md:w-64 ${imageAspect}`}>
-        <img 
-          src={imageSrc} 
-          alt={imageLabel} 
-          className="h-full w-full object-contain object-left-top" 
+        <img
+          src={imageSrc}
+          alt={imageLabel}
+          className="h-full w-full object-contain object-left-top"
         />
       </div>
-      
+
       {/* Le texte à droite */}
       <div className="flex-1 space-y-4 text-[17px] font-light leading-relaxed text-neutral-800">
+        {title && (
+          <h3 className="text-sm font-semibold uppercase tracking-wider text-neutral-500">
+            {title}
+          </h3>
+        )}
         <p>
           <strong className="font-semibold">Référence bibliographique :</strong>
           <br />
