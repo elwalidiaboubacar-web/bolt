@@ -64,26 +64,30 @@ export default function Bibliography() {
           imageAspect="aspect-[4/5]"
         />
       </div>
-
-      <div>
+<div>
         <SectionTitle>Sources web</SectionTitle>
         <div className="space-y-16 md:space-y-20">
           {WEB_SOURCES.map((source, index) => {
-             // Utilisation des images 5, 6 et 7. 
-             // Ajuste les extensions (.png ou .jpg) selon les fichiers exacts que tu as dans public/
-             const ext = index === 1 ? 'jpg' : 'png';
-             return (
-               <ReferenceCard
-                 key={index}
-                 reference={source}
-                 imageSrc={`/${index + 5}.${ext}`}
-                 imageLabel={`Capture de la source web ${index + 1}`}
-                 imageAspect="aspect-video"
-               />
-             )
+            // Utilisation des images 5, 6 et 7.
+            // Ajuste les extensions (.png ou .jpg) selon les fichiers exacts que tu as dans public/
+            const ext = index === 1 ? 'jpg' : 'png';
+            return (
+              <div key={index} className="space-y-4">
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-neutral-500">
+                  Source web {index + 1}
+                </h3>
+                <ReferenceCard
+                  reference={source}
+                  imageSrc={`/${index + 5}.${ext}`}
+                  imageLabel={`Capture de la source web ${index + 1}`}
+                  imageAspect="aspect-video"
+                />
+              </div>
+            );
           })}
         </div>
       </div>
+      
       
     </section>
   );
