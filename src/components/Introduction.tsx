@@ -24,7 +24,7 @@ Je me suis également intéressée aux changements que connaît actuellement le 
         </p>
         
         <p>
-          Pour m'aider dans mes recherches, j'ai utilisé :
+          Pour m'aider dans mes recherches et ma rédaction, j'ai utilisé :
         </p>
         
         {/* Liste à puces bien espacée */}
@@ -41,7 +41,7 @@ Je me suis également intéressée aux changements que connaît actuellement le 
         </ul>
         
         <p>
-          Pour m'aider dans la rédaction, j'ai utilisé :
+        
         </p>
         
         <ul className="list-disc pl-8">
