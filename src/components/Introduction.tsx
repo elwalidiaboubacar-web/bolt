@@ -7,7 +7,7 @@ export default function Introduction() {
         </p>
         
         <p>
-   J'ai voulu en savoir davantage sur les missions du radiologue, son quotidien, les études nécessaires pour exercer cette profession ainsi que les différentes possibilités d'évolution. Je me suis également intéressée aux changements que connaît actuellement le domaine de la radiologie, notamment avec le développement de l'iA.
+J'ai voulu en savoir davantage sur les missions du radiologue, son quotidien, les études nécessaires pour exercer cette profession ainsi que les différentes possibilités d'évolution. Je me suis également intéressée aux changements que connaît actuellement le domaine de la radiologie, notamment avec le développement de l'iA.
         </p>
         
         <p>
