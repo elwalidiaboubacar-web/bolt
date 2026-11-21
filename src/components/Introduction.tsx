@@ -16,7 +16,7 @@ Je me suis également intéressée aux changements que connaît actuellement le 
         </p>
         
         <p>
-          J'ai donc choisi de travailler sur la problématique suivante : En quoi consiste concrètement la pratique du radiologue aujourd'hui, et comment les avancées technologiques redéfinissent-elles ce métier et ses perspectives d'emploi ?
+  J'ai donc choisi de travailler sur la problématique suivante : En quoi consiste concrètement la pratique du radiologue aujourd'hui, et comment les avancées technologiques redéfinissent-elles ce métier et ses perspectives d'emploi ?
         </p>
         
         <p>
