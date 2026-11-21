@@ -3,11 +3,12 @@ export default function Introduction() {
     <section className="mx-auto max-w-4xl px-6">
       <div className="space-y-6 text-lg font-light leading-relaxed text-neutral-800">
         <p>
-          Je suis depuis longtemps intéressée par le domaine de la médecine, mais aussi par les sciences et les nouvelles technologies. J'aimerais donc exercer un métier qui associe les connaissances médicales et l'utilisation de technologies avancées. C'est pour cette raison que j'ai choisi de m'intéresser au métier de radiologue. Je trouve particulièrement intéressant le fait de pouvoir utiliser des appareils comme les scanners et les IRM pour aider à détecter des maladies et à poser des diagnostics.
+Je suis depuis longtemps intéressée par le domaine de la médecine, mais aussi par les sciences et les nouvelles technologies. J'aimerais donc exercer un métier qui associe les connaissances médicales et l'utilisation de technologies avancées. C'est pour cette raison que j'ai choisi de m'intéresser au métier de radiologue. Je trouve particulièrement intéressant le fait de pouvoir utiliser des appareils comme les scanners et les IRM pour aider à détecter des maladies et à poser des diagnostics.
         </p>
         
         <p>
-J'ai voulu en savoir davantage sur les missions du radiologue, son quotidien, les études nécessaires pour exercer cette profession ainsi que les différentes possibilités d'évolution. Je me suis également intéressée aux changements que connaît actuellement le domaine de la radiologie, notamment avec le développement de l'iA.
+J'ai voulu en savoir davantage sur les missions du radiologue, son quotidien, les études nécessaires pour exercer cette profession ainsi que les différentes possibilités d'évolution. 
+Je me suis également intéressée aux changements que connaît actuellement le domaine de la radiologie, notamment avec le développement de l'iA.
         </p>
         
         <p>
