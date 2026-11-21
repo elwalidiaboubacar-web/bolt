@@ -36,7 +36,7 @@ Je me suis également intéressée aux changements que connaît actuellement le 
             Les bases de données universitaires comme le SCD et Cairn.info pour trouver des documents et des informations complémentaires sur mon sujet.
           </li>
           <li>
-            ChatGPT pour m'aider à mieux comprendre certaines notions, organiser mes recherches et trouver des pistes de réflexion autour de l'évolution du métier de radiologue avec les nouvelles technologies.
+   ChatGPT pour m'aider à mieux comprendre certaines notions, organiser mes recherches et trouver des pistes de réflexion autour de l'évolution du métier de radiologue avec les nouvelles technologies.
           </li>
         </ul>
         
